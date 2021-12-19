@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="title">{{message}}</view>
+    <van-button plain type="primary" bindtap="say">LoadData</van-button>
+</view>
