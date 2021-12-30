@@ -1,0 +1,6 @@
+@import './variables.scss';
+
+page {
+  --tabs-bottom-bar-color: #{$primary-color};
+  --tab-active-text-color: #{$text-active-color};
+}

@@ -1,0 +1,67 @@
+/* pages/login/index.wxss */
+@import '../../styles/variables.scss';
+
+.page-login{
+  background-color: $primary-color;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .form{
+     background-color: white;
+     height: 85%;
+     width: 100%;
+     position: absolute;
+     bottom: 0;
+     border-radius: 30rpx 30rpx 0 0;
+     overflow: hidden;
+     .tab{
+        padding: 0rpx 70rpx;
+        display: flex;
+        flex-direction: column;
+        .btn{
+           width: 100%;
+           border-radius: 8rpx;
+           margin-top: 14rpx;
+        }
+        .text-bottom{
+           color: $default-text-color;
+           margin-top: 80rpx;
+           text-align: center;
+           a{
+             color: $primary-color;
+           }
+        }
+     }
+     .van-tabs__line{
+       width: 50% !important;
+     }
+     .title{
+        padding: 70rpx 0rpx;
+        font-size: 40rpx;
+        color: $primary-color;
+        font-weight: bold;
+        span{
+          display: block;
+          font-size: 24rpx;
+          color: $default-text-color;
+        }
+     }
+     .content{
+        .label{
+           color: $disable-text-color;
+           display: inline-block;
+           margin-bottom: 24rpx;
+           font-size: 26rpx;
+        }
+     }
+     .van-cell{
+        border: 1px solid lightgray;
+        border-radius: 34rpx;
+     }
+     .forget{
+        color: $primary-color;
+        font-size: 24rpx;
+        margin-top: 44rpx;
+     }
+  }
+}
