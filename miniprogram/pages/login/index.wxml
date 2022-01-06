@@ -3,23 +3,23 @@
 
   <view class="form">
     <van-tabs active="{{ active }}" bind:change="doChange">
-      <van-tab title="登陆">
+      <van-tab title="登录">
         <view class="tab" style="height: 100%; overflow: auto;">
           <view class="title">
-            登陆
+            登录
             <span>hahahaha!</span>
           </view>
           <view class="content">
             <text class="label">用户名/邮箱</text>
-            <van-field value="{{ username }}" clearable placeholder="请输入用户名/邮箱" />
+            <van-field model:value="{{ username }}" clearable placeholder="请输入用户名/邮箱" />
           </view>
           <view style="height: 32rpx"></view>
           <view class="content">
             <text class="label">密码</text>
-            <van-field value="{{ username }}" clearable placeholder="请输入密码" type="password" />
+            <van-field model:value="{{ password }}" clearable placeholder="请输入密码" type="password" />
           </view>
           <view class="forget">忘记密码？</view>
-          <van-button custom-class="btn">登陆</van-button>
+          <van-button custom-class="btn" type="primary" bindtap="doLogin">登录</van-button>
           <view class="space"></view>
           <view class="text-bottom">还没有账号？<a href="#">去注册</a></view>
         </view>
