@@ -1,5 +1,19 @@
 <!--index.wxml-->
-<view class="container">
-    <view class="title">{{message}}</view>
-    <van-button plain type="primary" bindtap="say">LoadData</van-button>
+<view class="home">
+   <view class="header">
+       <view class="user-box">
+          <view class="avatar">呵</view>
+          <view class="msg">
+            <image src="../../images/bell.svg"/>
+            <view class="count">4</view>
+          </view>
+       </view>
+   </view>
+   <view class="popular">
+        <scroll-view class="category-banner-list" scroll-x="true" style="width: 100%">
+          <view class="category-box" wx:for="{{categoryBannerList}}" wx:key="index">
+            <image src="{{item.image}}"/>
+          </view>
+        </scroll-view>
+  </view>
 </view>

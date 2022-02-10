@@ -2,6 +2,19 @@
 
 Page({
   data: {
-    message:'Hello World'
-  },
+    categoryBannerList:[
+      {
+        image:'../../images/hip-hop.png',
+      },
+      {
+        image:'../../images/hip-hop.png',
+      },
+      {
+        image:'../../images/hip-hop.png',
+      },
+      {
+        image:'../../images/hip-hop.png',
+      },
+    ]
+  }
 })
