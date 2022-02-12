@@ -16,4 +16,19 @@
           </view>
         </scroll-view>
   </view>
+  <view class="trending">
+      <view class="title">
+         <view>推荐音乐人</view>
+         <view class="more">更多</view>
+      </view>
+      <scroll-view class="trending-banner-list" scroll-x="true" style="width: 100%;">
+        <view class="trending-box">
+          <view class="card" wx:for="{{musicianBannerList}}" wx:key="index">
+            <image src="{{item.photo}}"/>
+            <view class="name">{{item.name}}</view>
+            <view class="category">{{item.category}}</view>
+          </view>
+        </view>
+      </scroll-view>
+  </view>
 </view>
