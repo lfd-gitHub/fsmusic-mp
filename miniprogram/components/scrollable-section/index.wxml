@@ -1,0 +1,13 @@
+<!--components/scrollable-section/index.wxml-->
+<view class="box">
+    <view class="title" wx:if="{{title}}">
+        <view>{{title}}</view>
+        <view wx:if="{{hasMore}}" class="more">更多</view>
+    </view>
+    <scroll-view class="list" scroll-x="{{scrollX}}" scroll-y="{{!scrollX}}" style="width: 100%;">
+      <view class="{{scrollX ? 'item-box' : 'item-box-y'}}">
+          <view class="w-40"></view>
+          <slot></slot>
+      </view>
+    </scroll-view>
+</view>

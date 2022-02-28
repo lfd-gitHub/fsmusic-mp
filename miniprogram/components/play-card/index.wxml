@@ -1,0 +1,11 @@
+<!--components/play-card/index.wxml-->
+<view class="card">
+    <view class="head">
+        <image class="avatar"  src="{{item.image}}"/>
+        <view class="icon"></view>
+    </view>
+    <view class="desc">
+        <view class="title">{{item.title}}</view>
+        <view class="name">{{item.name}}</view>
+    </view>
+</view>

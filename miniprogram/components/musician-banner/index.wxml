@@ -1,0 +1,4 @@
+<!--components/musician-banner/index.wxml-->
+<view class="category-box">
+  <image class="image" src="{{item.image}}"/>
+</view>

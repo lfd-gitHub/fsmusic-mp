@@ -1,0 +1,28 @@
+/* components/musician-card/index.wxss */
+@import '../../styles/variables.scss';
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 40rpx;
+   .image{
+     width: 240rpx;
+     height: 240rpx;
+     border-radius: 240rpx;
+   }
+   .name{
+     color: $text-active-color;
+     font-size: 32rpx;
+     line-height: 36rpx;
+     margin-top: 20rpx;
+   }
+   .category{
+     margin-top: 10rpx;
+     font-size: 24rpx;
+     color: #7a869a;
+     line-height: 30rpx;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+   }
+}

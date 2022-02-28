@@ -1,0 +1,7 @@
+<!--components/musician-card/index.wxml-->
+
+<view class="card">
+    <image class="image" src="{{item.photo}}"/>
+    <view class="name">{{item.name}}</view>
+    <view class="category">{{item.category}}</view>
+</view>  

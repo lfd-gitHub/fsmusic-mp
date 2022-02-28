@@ -10,6 +10,7 @@
     "@vant/weapp": "^1.10.2"
   },
   "devDependencies": {
+    "mini-program-iconfont-cli": "^0.6.1",
     "miniprogram-api-typings": "^3.4.5"
   }
 }

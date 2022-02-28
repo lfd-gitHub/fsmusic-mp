@@ -1,0 +1,45 @@
+/* components/play-card/index.wxss */
+@import '../../styles/variables.scss';
+.card{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 40rpx;
+  .head{
+    position: relative;
+  }
+  .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 40rpx;
+    background-color: #FFFF;
+    margin: -20rpx 0 0 -20rpx;
+  }
+  .avatar{
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 128rpx;
+  }
+  .desc{
+    padding-left: 40rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+  .title{
+    font-size: 32rpx;
+    color: $text-active-color;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .name{
+    font-size: 24rpx;
+    color: $text-color;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

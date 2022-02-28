@@ -1,0 +1,31 @@
+/* components/scrollable-section/index.wxss */
+@import '../../styles/variables.scss';
+
+.box{
+  .title{
+    padding-right: 40rpx;
+    padding-left: 40rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 44rpx;
+    color: $text-active-color;
+    line-height: 52rpx;
+    margin-bottom: 20rpx;
+    .more{
+       font-size: 28rpx;
+       color: $primary-color;
+    }
+  }
+  .item-box{
+    display: flex;
+    flex-direction: row
+  }
+  .item-box-y{
+    display: flex;
+    flex-direction: column;
+  }
+  .w-40{
+    padding-left: 40rpx;
+  }
+}

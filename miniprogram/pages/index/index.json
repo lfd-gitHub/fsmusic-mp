@@ -2,6 +2,11 @@
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
     "van-tabbar": "@vant/weapp/tabbar/index",
-    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "scrollable-section":"../../components/scrollable-section",
+    "musician-card":"../../components/musician-card",
+    "musician-banner":"../../components/musician-banner",
+    "album-card":"../../components/album-card",
+    "play-card":"../../components/play-card"
   }
 }

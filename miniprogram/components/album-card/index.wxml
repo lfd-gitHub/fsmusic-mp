@@ -1,0 +1,6 @@
+<!--components/album-card/index.wxml-->
+<view class="card">
+    <image class="image" src="{{item.image}}"/>
+    <view class="title">{{item.title}}</view>
+    <view class="desc">{{item.desc}}</view>
+</view>  

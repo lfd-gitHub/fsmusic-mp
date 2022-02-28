@@ -9,26 +9,30 @@
           </view>
        </view>
    </view>
-   <view class="popular">
-        <scroll-view class="category-banner-list" scroll-x="true" style="width: 100%">
-          <view class="category-box" wx:for="{{categoryBannerList}}" wx:key="index">
-            <image src="{{item.image}}"/>
-          </view>
-        </scroll-view>
+<view class="content">
+  <view class="section">
+    <scrollable-section scroll-x="true" style="width: 100%">
+      <musician-banner class="category-box" wx:for="{{categoryBannerList}}" wx:key="index" item="{{item}}"/>
+    </scrollable-section>
   </view>
-  <view class="trending">
-      <view class="title">
-         <view>推荐音乐人</view>
-         <view class="more">更多</view>
-      </view>
-      <scroll-view class="trending-banner-list" scroll-x="true" style="width: 100%;">
-        <view class="trending-box">
-          <view class="card" wx:for="{{musicianBannerList}}" wx:key="index">
-            <image src="{{item.photo}}"/>
-            <view class="name">{{item.name}}</view>
-            <view class="category">{{item.category}}</view>
-          </view>
-        </view>
-      </scroll-view>
+
+  <view class="section">
+    <scrollable-section title="推荐音乐人">
+      <musician-card wx:for="{{musicianBannerList}}" wx:key="index" item="{{item}}"></musician-card>
+    </scrollable-section>
   </view>
+
+  <view class="section">
+    <scrollable-section title="推荐歌单">
+        <album-card wx:for="{{playList}}" wx:key="index" item="{{item}}"></album-card>
+    </scrollable-section>
+  </view>
+
+  <view class="section">
+    <scrollable-section title="最新电台" scrollX="{{false}}">
+      <play-card wx:for="{{recentList}}" wx:key="index" item="{{item}}"></play-card>
+    </scrollable-section>
+  </view>
+</view>
+
 </view>

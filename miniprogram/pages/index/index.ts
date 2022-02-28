@@ -37,6 +37,39 @@ Page({
         category: '流星音乐',
         photo: '../../images/musician-photo.png'
       }
+    ],
+    playList:[
+      {
+        image:"../../images/album.png",
+        title:"心流歌单",
+        desc:"歌单描述"
+      },{
+        image:"../../images/album.png",
+        title:"心流歌单",
+        desc:"歌单描述"
+      },
+      {
+        image:"../../images/album.png",
+        title:"心流歌单",
+        desc:"歌单描述"
+      }
+    ],
+    recentList:[
+      {
+        image:"../../images/album.png",
+        title:"心流歌单",
+        name:"十一月的肖邦 - 周杰伦"
+      },
+      {
+        image:"../../images/album.png",
+        title:"心流歌单",
+        name:"十一月的肖邦 - 周杰伦"
+      },
+      {
+        image:"../../images/album.png",
+        title:"心流歌单",
+        name:"十一月的肖邦 - 周杰伦"
+      }, 
     ]
   }
 })
