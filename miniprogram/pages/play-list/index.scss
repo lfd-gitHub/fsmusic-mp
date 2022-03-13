@@ -1,0 +1,50 @@
+/* pages/play-list/index.wxss */
+@import '../../styles/variables.scss';
+.page{
+  .top{
+     margin-top: 200rpx;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     image{
+        height: 470rpx;
+        width: 750rpx;
+     }
+     text{
+       margin-top: 20rpx;
+       text-align: center;
+       font-size: 36rpx;
+       line-height: 42rpx;
+     }
+     .desc{
+        color: $text-color;
+        font-size: 24rpx;
+        line-height: 30rpx;
+     }
+  }
+  .action{
+    margin-top: 32rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    .play{
+      background-color: $primary-color;
+      width: 442rpx;
+      border-radius: 16rpx;
+      margin-right: 20rpx;
+      color: white;
+    }
+    .save{
+      background-color: #0041c440;
+      border-radius: 16rpx;
+      image{
+        width: 46rpx;
+        height: 46rpx;
+      }
+    }
+  }
+  .play-list{
+     margin-top: 20rpx;
+  }
+}

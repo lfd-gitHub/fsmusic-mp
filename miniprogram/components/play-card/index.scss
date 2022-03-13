@@ -3,6 +3,7 @@
 .card{
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 10rpx 40rpx;
   .head{
     position: relative;
@@ -23,6 +24,7 @@
     border-radius: 128rpx;
   }
   .desc{
+    flex: 1;
     padding-left: 40rpx;
     display: flex;
     flex-direction: column;
@@ -41,5 +43,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .action{
+    .img{
+      width: 32rpx;
+      height: 32rpx;
+    }
   }
 }

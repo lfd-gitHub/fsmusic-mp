@@ -1,0 +1,17 @@
+<!--pages/play-list/index.wxml-->
+<view class="page">
+   <view class="top">
+     <image src="../../images/album.svg"/>
+     <text>100佳流行音乐</text>
+     <text class="desc">那些熟悉的旋律</text>
+   </view>
+   <view class="action">
+    <van-button custom-class="play">播放</van-button>
+    <van-button custom-class="save" >
+      <image src="../../images/save.svg"></image>
+    </van-button>
+   </view>
+   <view class="play-list">
+    <play-card type="detail" wx:for="{{playList}}" wx:key="index" item="{{item}}"></play-card>
+   </view>
+</view>
